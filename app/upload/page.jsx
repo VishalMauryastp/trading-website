@@ -24,20 +24,20 @@ const Page = () => {
     console.log(result);
   };
 
-  const getPublicAssets = async () => {
-    try {
-      const response = await fetch("/api/upload", { method: "GET" });
+  // const getPublicAssets = async () => {
+  //   try {
+  //     const response = await fetch("/api/upload", { method: "GET" });
 
-      console.log(response);
+  //     console.log(response);
 
-      return data;
-    } catch (error) {
-      console.log("Error fetching public assets:", error.message);
-      return null;
-    }
-  };
+  //     return data;
+  //   } catch (error) {
+  //     console.log("Error fetching public assets:", error.message);
+  //     return null;
+  //   }
+  // };
 
-  getPublicAssets();
+  // getPublicAssets();
 
   return (
     <div className="  w-[90%] mx-auto  py-20">
