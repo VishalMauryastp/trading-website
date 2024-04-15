@@ -23,8 +23,8 @@ const HowWorks = () => {
       <h1 className="text-center font-bold text-3xl">How it Works?</h1>
 
       <h2 className="text-text-base font-bold font-Poppins text-center mt-8">
-        We appreciate all the love and support from everyone! 😍 We're excited
-        to announce that we've reached over 10,000 customers 🎉
+        We appreciate all the love and support from everyone! 😍 We are excited
+        to announce that we have reached over 10,000 customers 🎉
       </h2>
       <div>
         {steps.map((val, i) => {

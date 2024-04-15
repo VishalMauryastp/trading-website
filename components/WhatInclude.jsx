@@ -57,7 +57,7 @@ const WhatInclude = () => {
       <div>
         {marketData.map((val, i) => {
           return (
-            <div className="mt-8">
+            <div key={i} className="mt-8">
               <h1 className="font-bold text-xl">
                 {val.step} {val.title}
               </h1>
@@ -67,7 +67,7 @@ const WhatInclude = () => {
                   <ul>
                     {val?.indices.map((value, k) => {
                       return (
-                        <div className="flex items-center gap-2 pl-2 text-[16px] font-medium first:mt-0 mt-2" key={k}>
+                        <div  className="flex items-center gap-2 pl-2 text-[16px] font-medium first:mt-0 mt-2" key={k}>
                           <BsCheckCircleFill className="text-blue-700 font-extrabold" />{" "}
                           <li>{value}</li>
                         </div>

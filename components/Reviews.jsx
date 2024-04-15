@@ -33,7 +33,7 @@ const Reviews = () => {
         <div className=" flex flex-col gap-4 font-Poppins mt-12 ">
           {feedbackArray.map((val, i) => {
             return (
-              <div className="bg-blue-200 rounded-2xl p-8 drop-shadow">
+              <div key={i} className="bg-blue-200 rounded-2xl p-8 drop-shadow">
                 <div className="p-8 bg-white rounded-2xl drop-shadow">
                   <p>{val.feedback}</p>
                 </div>

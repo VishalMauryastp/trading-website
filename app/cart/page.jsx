@@ -49,7 +49,7 @@ const Page = () => {
           <div className="py-4">
             {additionalInfo.map((val, i) => {
               return (
-                <div className="flex items-center gap-2  ">
+                <div key={i} className="flex items-center gap-2  ">
                   <BsCheckCircleFill className="min-w-[20px] text-blue-500 font-extrabold" />
                   <p> {val}</p>
                 </div>

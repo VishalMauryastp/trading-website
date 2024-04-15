@@ -1,5 +1,5 @@
 import React from "react";
-import Main from "@/components/Checkout/index";
+import Main from "@/components/Checkout/Main";
 
 const Page = () => {
   return (

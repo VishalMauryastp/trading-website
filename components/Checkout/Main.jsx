@@ -1,13 +1,13 @@
-'use client'
+"use client";
 import React from "react";
 import { FaFacebook, FaPhoneAlt, FaTwitter } from "react-icons/fa";
 import { IoLogoWhatsapp, IoMdMail } from "react-icons/io";
 import CheckoutForm from "./CheckoutForm";
-import { useParams } from 'next/navigation'
+import { useParams } from "next/navigation";
 
-const index = () => {
+const Main = () => {
   const { id } = useParams();
- 
+
   return (
     <section className=" py-4 lg:py-16 ">
       <div className="max-w-screen-lg mx-3 lg:mx-auto ">
@@ -72,4 +72,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default  Main;

@@ -15,9 +15,9 @@ const Bonus = () => {
         FREE Bonus worth ₹2999!
       </h1>
       <div className="grid grid-cols-2 mt-12">
-        {img.map((val) => {
+        {img.map((val,i) => {
           return (
-            <div className="p-4 ">
+            <div key={i} className="p-4 ">
               <img className="mx-auto" src={val} alt="loading..." />
             </div>
           );
