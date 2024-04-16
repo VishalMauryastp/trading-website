@@ -145,7 +145,8 @@ const FileView = ({ deleteFile, fileName, filePath }) => {
       <td className="px-4 border">
         <a
           target="_blank"
-          href={`http://localhost:3000/${filePath}`}
+          href={`https://trading-website-7qn3.onrender.com/${filePath}`}
+          // href={`http://localhost:3000/${filePath}`}
           className=""
         >
           Preview
