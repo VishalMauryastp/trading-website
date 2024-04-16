@@ -168,7 +168,7 @@ const FileView = ({ deleteFile, fileName, filePath }) => {
 const FileListView = ({ deleteFile, files }) => {
   return (
     <>
-      {files.length > 0 && (
+      {files && files?.length > 0 && (
         <table className="table-fixed mx-auto">
           <thead>
             <tr className="border">
@@ -179,7 +179,7 @@ const FileListView = ({ deleteFile, files }) => {
             </tr>
           </thead>
           <tbody>
-            {files.map((filePath, index) => (
+            {files?.map((filePath, index) => (
               <FileView
                 key={index}
                 fileName={`File ${index + 1}`}
@@ -190,12 +190,12 @@ const FileListView = ({ deleteFile, files }) => {
           </tbody>
         </table>
       )}
-      {files.length == 0 && (
-        <h1 className="text-center text-2xl font-semibold">
-          {" "}
-          Files Not Found /Error in fetching data
-        </h1>
-      )}
+      {!files ||
+        (files && !files.length > 0 && (
+          <h1 className="text-center text-2xl font-semibold">
+            Files Not Found / Error in fetching data
+          </h1>
+        ))}
     </>
   );
 };
