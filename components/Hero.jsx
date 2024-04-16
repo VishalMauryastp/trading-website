@@ -1,10 +1,10 @@
+import { useRouter } from "next/navigation";
 import React from "react";
 
 const Hero = () => {
+  const router = useRouter();
   return (
-    <div className="relative max-w-md  mx-auto   "
-    
-    >
+    <div className="relative max-w-md  mx-auto   ">
       <div className="px-4 sm:px-10">
         <div className=" pt-16 mx-auto text-center relative z-10">
           {/* max-w-4xl */}
@@ -17,7 +17,12 @@ const Hero = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
           <div className="mt-10">
-            <button className="px-6 py-3 rounded-xl text-white bg-blue-500 transition-all hover:bg-blue-400">
+            <button
+              className="px-6 py-3 rounded-xl text-white bg-blue-500 transition-all hover:bg-blue-400"
+              onClick={() => {
+                router.push("/upload");
+              }}
+            >
               Add your PDF here.
             </button>
           </div>

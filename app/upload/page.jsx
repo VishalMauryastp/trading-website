@@ -193,7 +193,7 @@ const FileListView = ({ deleteFile, files }) => {
       {files.length == 0 && (
         <h1 className="text-center text-2xl font-semibold">
           {" "}
-          Files Not Found /Error fetching
+          Files Not Found /Error in fetching data
         </h1>
       )}
     </>
